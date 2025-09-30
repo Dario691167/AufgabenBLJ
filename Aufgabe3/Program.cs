@@ -16,6 +16,7 @@ namespace Aufgabe3
             Console.WriteLine("i");
                 i++;
             }
+            Console.ReadKey();
         }
     }
 }

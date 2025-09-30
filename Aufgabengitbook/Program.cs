@@ -18,7 +18,7 @@ namespace Aufgabe1
             Console.Write("Zahl 2: ");
             Num2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Num1 + Num2);
-
+            Console.ReadKey();
         }
     }
 }

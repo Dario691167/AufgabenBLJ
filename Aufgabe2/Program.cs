@@ -22,6 +22,7 @@ namespace Aufgabe2
             {
                 Console.WriteLine("Eingabefehler. Bitte geben Sie eine ganze Zahl zwischen 28 und 31 ein.");
             }
+            Console.ReadKey();
         }
     }
 }
