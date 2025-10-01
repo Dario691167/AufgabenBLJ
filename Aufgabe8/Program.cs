@@ -10,18 +10,30 @@ namespace Aufgabe8
     {
         static void Main(string[] args)
         {
-            string[] badWords = { "fuck", "hure", "hurensohn", "arsch", "arschloch", "fick", "bitch", "ass", "dumbass", "idiot, Bastard" };
+            string[] badWords = { "fuck", "hure", "hurensohn", "arsch", "arschloch", "fick", "bitch", "ass", "dumbass", "idiot", "bastard" };
             Console.WriteLine("Dein Kommentar");
             string comment = Console.ReadLine();
             string lowerComment = comment.ToLower();
-            for (int i = 0; i < badWords.Length; i++;)
+
+            int badWordCount = 0;
+            foreach (string badWord in badWords)
             {
-                if (lowerComment.Contains(badWords[i]))
+                if (lowerComment.Contains(badWord))
                 {
-                    Console.WriteLine("Dein Kommentar wurde wegen unangebrachter Sprache gelöscht.");
-                    return;
+                    badWordCount++;
                 }
             }
+
+            if (badWordCount > 0)
+            {
+                Console.WriteLine("Dein Kommentar enthält " + badWordCount + " böse Wörter.");
+                Console.WriteLine("Er wird nicht veröffentlicht.");
+            }
+            else
+            {
+                Console.WriteLine("Vielen Dank für deinen Kommentar.");
+            }
+            Console.ReadKey();
         }
     }
 }

@@ -23,6 +23,7 @@ namespace Aufgabe7
                     i++;
                 }
             }
+            Console.ReadKey();
         }
     }
 }

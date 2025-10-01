@@ -23,6 +23,7 @@ namespace Aufgabe6
                 }
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
 
     }
